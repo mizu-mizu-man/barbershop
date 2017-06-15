@@ -2,18 +2,18 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Барбершоп «Бородинский»</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Средства для ухода</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <nav class="mai-navigation">
+      <div class="container clearfix">
+        <nav class="main-navigation">
           <ul>
             <li><a href="#">Информация</a></li>
             <li><a href="#">Новости</a></li>
-            <li class="active"><span>Прайс-лист</span></li>
-            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Прайс-лист</a></li>
+            <li class="active"><span>Магазин</span></li>
             <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
@@ -33,18 +33,60 @@
         </ul>
       </div>
       <div class="inner-content clearfix">
-        <form class="catalog-selector">
-          <fieldset class="selector-manufacturers">
+        <form class="catalog-filters">
+          <fieldset class="filter-manufacturers">
             <legend>Производители:</legend>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="baxter" id="baxter" checked>
+              <span class="checkbox-indicator"></span>
+              Baxter of California
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="natty" id="natty">
+              <span class="checkbox-indicator"></span>
+              Mr Natty
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="suavecito" id="suavecito" checked>
+              <span class="checkbox-indicator"></span>
+              Suavecito
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="malin" id="malin">
+              <span class="checkbox-indicator"></span>
+              Malin+Goetz
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="murrays" id="murrays">
+              <span class="checkbox-indicator"></span>
+              Murray's
+            </label>
+            <label class="filter-checkbox">
+              <input type="checkbox" name="crew" id="crew" checked>
+              <span class="checkbox-indicator"></span>
+              American Crew
+            </label>
           </fieldset>
-          <fieldset class="selector-group">
+          <fieldset class="filter-groups">
             <legend>Группы товаров:</legend>
+            <label>
+              <input type="radio" name="group-item" value="shaving-materials">
+              Бритвенные принадлежности
+            </label>
+            <label>
+              <input type="radio" name="group-item" value="care-preparations" checked>
+              Средства для ухода
+            </label>
+            <label>
+              <input type="radio" name="group-item" value="accessories">
+              Аксессуары
+            </label>
           </fieldset>
           <button class="btn" type="button">Показать</button>
         </form>
         <div class="catalog-gallery">
           <article class="gallery-item">
-            <img src="" width="" height="" alt="Набор для путешестрий &laquo;BAXTER OF CALIFORNIA&raquo;" title="&laquo;BAXTER OF CALIFORNIA&raquo;">
+            <a href="item.html"><img src="" width="" height="" alt="Набор для путешестрий &laquo;BAXTER OF CALIFORNIA&raquo;" title="&laquo;BAXTER OF CALIFORNIA&raquo;"></a>
             <div class="item-description">
               <h1>
                 <a href="item.html"><span>Набор для путешестрий</span> <span>&laquo;BAXTER OF CALIFORNIA&raquo;</span></a>
@@ -128,20 +170,20 @@
     <footer class="main-footer">
       <div class="container clearfix">
         <section class="footer-contacts">
-          Барбершоп «Бородинский»<br>
+          Барбершоп &laquo;Бородинский&raquo;<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
           <a href="#">Как нас найти?</a><br>
           Телефон: +7 (495) 666-02-66
         </section>
         <section class="footer-social">
           <p>Давайте дружить!</p>
-          <a class="btn-social btn-social-vk" href="#">Вконтакте</a>
-          <a class="btn-social btn-social-fb" href="#">Фейсбук</a>
-          <a class="btn-social btn-social-insta" href="#">Инстаграм</a>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-insta" href="#">Инстаграм</a>
         </section>
         <section class="footer-copyright">
           <p>Разработано:</p>
-          <a class="btn" href="#">HTML Academy</a>
+          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
         </section>
       </div>
     </footer>
