@@ -10,6 +10,11 @@ body {
   background: #000000 url("../img/background.jpg") no-repeat center top;
 }
 
+.inner-page {
+  color: #000000;
+  background: #f8f3f0 url("../img/pattern-white.jpg") repeat;
+}
+
 .clearfix::after {
   content: "";
   display: table;
@@ -27,6 +32,10 @@ body {
   margin-bottom: 57px;
   color: #ffffff;
   background-color: #000000;
+}
+
+.inner-page .main-header {
+  margin-bottom: 55px;
 }
 
 .main-navigation {
@@ -57,6 +66,47 @@ body {
 
 .main-navigation a:hover {
   background-color: #242424;
+}
+
+.main-navigation .header-logo {
+  float: left;
+  display: block;
+  width: 111px;
+  height: 20px;
+  padding-top: 22px;
+}
+
+.main-navigation .header-logo:hover {
+  background: none;
+}
+
+.main-navigation .header-logo img {
+  height: 24px;;
+  width: 111px;
+}
+
+.main-navigation .active {
+  position: relative;
+  background-color: none;
+}
+
+.main-navigation .active a:hover {
+  background: none;
+}
+
+.main-navigation .active::after {
+  position: absolute;
+  content: "";
+  left: 20px;
+  right: 20px;
+  height: 4px;
+  bottom: 0;
+  background-color: #ffffff;
+}
+
+.main-navigation .active span {
+  display: block;
+  padding: 25px 20px;
 }
 
 .user-block {
@@ -96,7 +146,7 @@ body {
   opacity: 1;
 }
 
-/* ===== MAIN CONTENT INDEX ===== */
+/* ===== INDEX.HTML CONTENT ===== */
 .index-logo {
   width: 368px;
   height: 204px;
@@ -297,6 +347,223 @@ body {
   width: 100%;
 }
 
+/* ===== INNER PAGES CONTENT ===== */
+.inner-page-title {
+  margin-bottom: 55px;
+}
+
+.inner-page-title h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs li {
+  position: relative;
+  display: inline;
+  padding-right: 40px;
+}
+
+.breadcrumbs li::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  top: 4px;
+  right: 18px;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.breadcrumbs a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs .current {
+  color: #aba9a7;
+}
+
+.breadcrumbs .current::after {
+  display: none;
+}
+
+.info-content {
+  margin-bottom: 80px;
+}
+
+.info-content h2 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.info-content h3 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.info-content h2 + h3 {
+  margin-top: 30px;
+}
+
+.info-content h2 {
+  margin: 14px 0;
+}
+
+.info-content p {
+  margin: 0;
+  padding: 0;
+}
+
+.info-content table {
+  border-collapse: collapse;
+}
+
+.info-content td {
+  padding: 10px 15px;
+  border: 2px solid #000000;
+}
+
+.big-heading {
+  margin-top: 55px;
+  margin-bottom: 65px;
+  text-align: center;
+}
+
+.big-heading h2 {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0 25px;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  z-index: 2;
+  background: #f8f3f0 url("../img/pattern-white.jpg") repeat;
+}
+
+.big-heading::after {
+  position: relative;
+  content: "";
+  display: block;
+  top: -25px;
+  border-bottom: 2px solid #000000;
+  z-index: 1;
+}
+
+.custom-list-1 {
+  margin: 14px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.custom-list-1 li {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.custom-list-1 li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  height: 8px;
+  width: 8px;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.prices-table {
+  width: 100%;
+}
+
+.prices-table td {
+  width: 50%;
+}
+
+.prices-table td:last-child {
+  text-align: center;
+}
+
+.info-columns {
+  margin: 60px 0;
+}
+
+.info-column-left,
+.info-column-right {
+  width: 460px;;
+}
+
+.info-column-left {
+  float: left;
+}
+
+.info-column-right {
+  float: right;
+}
+
+.info-column-left *:first-child,
+.info-column-right *:first-child {
+  margin-top: 0;
+}
+
+.info-column-left *:last-child,
+.info-column-right *:last-child {
+  margin-bottom: 0;
+}
+
+.short-text {
+  padding-right: 80px;
+}
+
+.catalog-content {
+  margin-bottom: 50px;
+}
+
+.catalog-filters {
+  float: left;
+  width: 200px;
+  margin-right: 40px;
+  min-height: 575px; /*Временно - потом удалить!*/
+}
+
+.catalog-gallery {
+  float: right;
+  width: 700px;
+  min-height: 680px; /*Временно - потом удалить!*/
+}
+
+.item-content-left {
+  margin-right: 80px;
+  float: left;
+  width: 460px;
+  min-height: 670px; /*Временно - потом удалить!*/
+}
+
+.item-content-right {
+  margin-top: 20px;
+  float: right;
+  width: 400px;
+  min-height: 520px; /*Временно - потом удалить!*/
+}
+
 /* ===== FOOTER ===== */
 .main-footer {
   margin-top: 65px;
@@ -306,7 +573,7 @@ body {
   background: #252525 url("../img/pattern-black.jpg");
 }
 
-.main-footer-shadow {
+.inner-page .main-footer {
   margin-top: 50px;
 }
 
@@ -390,68 +657,4 @@ body {
 
 .footer-copyright .btn {
   margin-right: 0;
-}
-
-/* ===== OTHER PAGES ===== */
-.inner-page-title {
-  min-height: 70px; /*Временно - потом удалить!*/
-  margin-bottom: 55px;
-}
-
-.catalog-content {
-  margin-bottom: 50px;
-}
-
-.catalog-filters {
-  float: left;
-  width: 200px;
-  margin-right: 40px;
-  min-height: 575px; /*Временно - потом удалить!*/
-}
-
-.catalog-gallery {
-  float: right;
-  width: 700px;
-  min-height: 680px; /*Временно - потом удалить!*/
-}
-
-.info-content {
-  margin-bottom: 80px;
-  min-height: 535px; /*Временно - потом удалить!*/
-}
-
-.big-heading {
-  margin-bottom: 65px;
-  min-height: 45px; /*Временно - потом удалить!*/
-}
-
-.info-columns {
-  margin-bottom: 60px;
-}
-
-.info-column-left {
-  margin-right: 10px;
-  float: left;
-  width: 390px;
-  min-height: 210px; /*Временно - потом удалить!*/
-}
-
-.info-column-right {
-  float: right;
-  width: 460px;
-  min-height: 210px; /*Временно - потом удалить!*/
-}
-
-.item-content-left {
-  margin-right: 80px;
-  float: left;
-  width: 460px;
-  min-height: 670px; /*Временно - потом удалить!*/
-}
-
-.item-content-right {
-  margin-top: 20px;
-  float: right;
-  width: 400px;
-  min-height: 520px; /*Временно - потом удалить!*/
 }
