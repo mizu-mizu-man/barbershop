@@ -6,8 +6,7 @@ body {
   line-height: 24px;
   text-transform: uppercase;
   color: #ffffff;
-
-  background: #000000 url("../img/background.jpg") no-repeat center top;
+  background: #242424 url("../img/barbershop-shop.jpg") no-repeat center top;
 }
 
 .inner-page {
@@ -25,6 +24,11 @@ body {
   width: 940px;
   padding: 0 10px;
   margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* ===== HEADER ===== */
@@ -536,7 +540,97 @@ body {
   float: left;
   width: 200px;
   margin-right: 40px;
-  min-height: 575px; /*Временно - потом удалить!*/
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filters fieldset {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  border: 0;
+}
+
+.catalog-filters legend {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.catalog-filters label {
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+  padding: 0;
+  padding-left: 43px;
+  margin: 0;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.catalog-filters label:last-child {
+  margin-bottom: 0;
+}
+
+.catalog-filters label:hover {
+  color: #663d15;
+}
+
+.catalog-filters input[type="checkbox"],
+.catalog-filters input[type="radio"] {
+  display: none;
+}
+
+.catalog-filters input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000000;
+}
+
+.catalog-filters input[type="checkbox"]:checked + .checkbox-indicator::before,
+.catalog-filters input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 1px;
+  width: 15px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.catalog-filters input[type="checkbox"]:checked + .checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+
+.catalog-filters input[type="checkbox"]:checked + .checkbox-indicator::after {
+  transform: rotate(-45deg);
+}
+
+.catalog-filters input[type="radio"] + .radio-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
+.catalog-filters input[type="radio"]:checked + .radio-indicator::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #000000;
 }
 
 .catalog-gallery {
@@ -675,7 +769,7 @@ body {
 }
 
 .modal-content-map {
-  /*display: none;*/
+  display: none;
   position: fixed;
   z-index: 30;
   top: 50%;
@@ -691,6 +785,7 @@ body {
 
 .modal-overlay {
   position: fixed;
+  display: none;
   z-index: 20;
   top: 0;
   left: 0;

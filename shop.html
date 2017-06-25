@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/outlines.css">
   </head>
   <body class="inner-page">
     <header class="main-header">
@@ -39,7 +40,7 @@
       </div>
       <div class="catalog-content clearfix">
         <form class="catalog-filters">
-          <fieldset class="filter-manufacturers">
+          <fieldset>
             <legend>Производители:</legend>
             <label class="filter-checkbox">
               <input type="checkbox" name="baxter" id="baxter" checked>
@@ -72,22 +73,25 @@
               American Crew
             </label>
           </fieldset>
-          <fieldset class="filter-groups">
+          <fieldset>
             <legend>Группы товаров:</legend>
             <label>
               <input type="radio" name="group-item" value="shaving-materials">
+              <span class="radio-indicator"></span>
               Бритвенные принадлежности
             </label>
             <label>
               <input type="radio" name="group-item" value="care-preparations" checked>
+              <span class="radio-indicator"></span>
               Средства для ухода
             </label>
             <label>
               <input type="radio" name="group-item" value="accessories">
+              <span class="radio-indicator"></span>
               Аксессуары
             </label>
           </fieldset>
-          <button class="btn" type="button">Показать</button>
+          <button class="btn" type="submit">Показать</button>
         </form>
         <div class="catalog-gallery">
           <article class="gallery-item">
